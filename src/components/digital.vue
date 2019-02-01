@@ -2,9 +2,9 @@
 	<article id="digital">
 		<aside class="panels">
 			<ul id="digital-menu" :class="[isOpen ? 'open' : null]">
-				<li v-for="(panel, i) in panels" :key="i">
+				<li v-for="(panel, i) in panels" :key="i" @click="setComp = showApp(i), avoidOpen()">
 					<ins>0{{ i + 1 }}</ins>
-					<h3 @click="setComp = showApp(i), avoidOpen()"><span>&bull;</span> {{ panel }}</h3>
+					<h3><span>&bull;</span> {{ panel }}</h3>
 				</li>
 			</ul>
 		</aside>
