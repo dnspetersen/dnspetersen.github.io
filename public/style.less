@@ -13,6 +13,7 @@
 	.box-sizing;
 }
 p {
+	max-width: 1000px;
 	.fonte(300,1.14em,@texto,1.36em);
 }
 button {
@@ -36,9 +37,9 @@ section h1 {
 	.transform(translateX(-50%));
 	.position(fixed,7vh,50%);
 	.bloco;
-	.flex-menu();
+	.flex-menu(row, flex-end, center);
 	li {
-		padding:5px 5vw;
+		padding:5px 2.5vw;
 		span, a {
 			.transition;
 			.fonte(300,1.2em,@texto,1.2em);
@@ -77,11 +78,14 @@ section h1 {
 		}
 		li {
 			.flex-menu(row,flex-start,center);
-			.bloco(auto,100%,25px 10%);
+			.bloco(auto,100%,5px 2.5vw);
 			overflow:hidden;
 			position: relative;
 			cursor: pointer;
 			border-bottom:1px solid @base;
+			@media screen and (min-width: 1369px) {
+				padding: 5px 10vw;
+			}
 			&:after {
 				content: "";
 				background:@base;
@@ -89,13 +93,17 @@ section h1 {
 				.position(absolute,auto,0,0,-100%);
 				.transition;
 			}
+			& > * {
+				.set-align;				
+				.inline();
+			}
 			ins {
 				z-index:2;
 				position:relative;
 				text-decoration: none;
 				color:@base/1.1;
 				.transition;
-				.fonte(600,3em);
+				.fonte(600,2.5em);
 			}
 			h3 {
 				z-index:2;
@@ -124,8 +132,11 @@ section h1 {
 Body {
 	.bloco();
 	.position(absolute,0,0,0,0);
-	
 	header {
+		padding: 0 2.5vw;
+		@media screen and (min-width: 1440px) {
+			padding: 0 5vw;
+		}
 		h1 {
 			z-index:3;
 			position:relative;
@@ -215,9 +226,10 @@ Body {
 						.fonte(700,3em);
 					}	
 				}
+				
 				div.subtitle {
 					.flex(row,space-around,flex-start);
-					.bloco(auto,100%,10px 25px);
+					.bloco(auto,100%,10px 25px 25px);
 					h3 {
 						padding:4px;
 						border-bottom:4px solid @preto;
@@ -232,12 +244,12 @@ Body {
 				
 				figure {
 					.bloco(auto,100%,0,50px auto 0);
-					.flex(row,space-evenly,center);
 					& > span {
-						border-top:1px solid @base/1.05;
-						border-bottom:1px solid @base/1.05;
+						display: block;
+						max-width:1440px; 
 						text-align:center;
-						.bloco(auto,100%,0,0);
+						.bloco(auto,100%,0,25px auto);
+						.sombra(-15px,20px,60px -20px, rgba(0,0,0,.2));
 						img {
 							max-width:100%;
 							background:@branco;
@@ -245,16 +257,21 @@ Body {
 						}	
 					}
 					figcaption {
-						.flex(column, flex-start)
+						.flex(column, flex-start, center, 1)
+					}
+					h3 {
+						max-width:1000px;
+						.bloco(auto,90%,25px);
+						.fonte(700,1.6em,@texto,1.4em);
 					}
 					p {
-						.bloco(auto,90%,25px 15px);
+						.bloco(auto,90%,25px);
 					}
 				}
 				
 				blockquote {
 					text-align:center;
-					max-width: 960px;
+					max-width: 1000px;
 					.fonte(500,1.4em,@texto,1.3em);
 					.bloco(auto,80%,25px);
 					a {
@@ -268,25 +285,26 @@ Body {
 				
 			}
 			
-			&#digital {
+			&#work {
 				div.work {
-					figure {
-						img:not(:only-child) {
-							.transform(translateY(-20%) scale(1.1));
+					figure.half {
+						.flex(row wrap,space-evenly,center, 1);
+						img {
+							.transform(translateY(-10%) scale(1.05));
 							.sombra(0,10px,35px -10px, rgba(0,0,0,0.5));
-							max-width:40%;
+							max-width:60%;
+							max-height: 100%;
 							height:auto;
 							width:auto;
+							position:relative;
+							z-index: 1;
+							& + img {
+								z-index: 0;
+								.transform(translateY(-10%) translateX(-5%));
+							}
 						}
 						figcaption {
 							max-width:40%;
-						}
-					}
-					&#work-4 {
-						figure {
-							img:not(:only-child) {
-								.sombra(0,0,0,0);
-							}
 						}
 					}
 				}
@@ -386,14 +404,18 @@ Body {
 	* {
 		font-size:98%;
 	}
-	
 	.menu {
-		.transform(translateX(-40%));
+		left: auto;
+		right: 0;
+		.transform(translateX(-5%));
 		li {
 			padding:5px 2.5vw !important;
 		}
 	}
-	
+	.panels {
+		bottom: -75vh;
+		height: 75vh !important;
+	}
 	Body {
 		header {
 			svg {
@@ -411,16 +433,25 @@ Body {
 				}
 			}
 			article {
-				
-				&#digital,&#identity {
+				blockquote {
+					width: 90% !important;
+				}
+				&#work,&#identity {
 					div.work {
 						figure {
-							img:not(:only-child) {
-								.transform(translateY(0));
-								max-width:100% !important;
+							img {
+								.transform(translateX(-25%));
+								max-width: 720px;
 							}
-							figcaption {
-								max-width:100%;
+							&.half {
+								img, img+img {
+									margin: 10px 0;
+									.transform(translateY(0) translateX(0));
+									max-width:100% !important;
+								}
+								figcaption {
+									max-width:100%;
+								}
 							}
 						}
 					}
@@ -447,10 +478,7 @@ Body {
 						}
 					}
 				}
-				
 			}
-
 		}
 	}
-	
 }

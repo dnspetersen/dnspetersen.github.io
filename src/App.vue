@@ -1,8 +1,8 @@
 <template>
   <div>
-  	<app-header></app-header>
-  	<app-section></app-section>
-  </div>
+		<app-header></app-header>
+		<app-section></app-section>
+		</div>
 </template>
 
 <script>
@@ -16,7 +16,3 @@ export default {
 	}
 }
 </script>
-
-<style>
-
-</style>

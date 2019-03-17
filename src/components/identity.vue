@@ -14,7 +14,6 @@
 	</article>
 </template>
 <script>
-import tgp from './identity/tgp.vue'
 import banktools from './identity/banktools.vue'
 import vicer from './identity/vicer.vue'
 
@@ -23,13 +22,12 @@ export default {
 		return {
 			isOpen: true,
 			setComp: 'appTGP',
-			comps: ["appTGP", "appBT", "appVicer"],
-			panels: ['TGP','BankTools', 'Vicer']
+			comps: ["appBT", "appVicer"],
+			panels: ['BankTools', 'Vicer']
 		}
 		
 	},
 	components: {
-		"appTGP": tgp,
 		"appBT": banktools,
 		"appVicer": vicer
 	}, 
@@ -38,7 +36,7 @@ export default {
 			return this.comps[id];
 		},
 		avoidOpen() {
-			document.getElementById('digital-menu').classList.remove('open');
+			document.getElementById('work-menu').classList.remove('open');
 		}
 	}
 }

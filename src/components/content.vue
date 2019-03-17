@@ -7,15 +7,8 @@
 			<path fill="#FFFFFF" d="M16.9,41.7V14.1h6.7c3.2,0,6.1-0.1,9.2,0.9c3.6,1.1,5.6,3.4,6.5,4.6c2.3,2.9,3.2,6,3.6,9.4l15.6-7.5
 				c-1-3.5-2.3-6.2-3.6-8.1c-2.1-3.3-4.1-5.1-5.3-6.1c-8.2-6.7-19.3-7-22.2-7.2c-2-0.1-4-0.1-6.1-0.1H0v49.8L16.9,41.7z"/>
 			</svg>
-			Denis Dev'n Design
+			Digital, UX and Front-end Designer
 			<span class="bar" id="load-site"></span>
 		</h1>
-		<figure>
-			<img src="../assets/desktop.jpg">
-		</figure>
-		<router-link to="/digital" tag="button">
-			➔
-			<span>Digital</span>
-		</router-link>
 	</article>
 </template>
