@@ -288,11 +288,6 @@ Body {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 Body header {
   padding: 0 2.5vw;
@@ -316,27 +311,23 @@ Body header h1 a {
   color: #424242;
 }
 Body section {
-  overflow: auto;
   height: auto;
   width: 100%;
   margin: 0 auto;
-  padding: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  padding: 50px 10px;
+}
+Body section:after,
+Body section:before {
+  content: "";
+  clear: both;
+  display: table;
 }
 Body section article {
+  position: relative;
   z-index: 4;
-  position: absolute;
-  top: 20vh;
-  left: 0;
-  right: auto;
-  bottom: auto;
-  height: 80vh;
+  height: auto;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 5vh;
   padding: 0;
 }
 Body section article div.work {

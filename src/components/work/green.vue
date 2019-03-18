@@ -37,7 +37,7 @@
 			<img src="../../assets/desk_gride-2.jpg" alt="Gride Club">
 		</figure>
 		<blockquote>
-			"Green Ride Club site is under development, for this moment can be visited in the link <a href="//www.greenride.com.br" target="_blank">www.greenride.com.br</a>, this URL will change to gride.club when it goes live"
+			"Green Ride Club site is under development, for this moment can be visited in the link <a href="http://www.greenride.com.br" target="_blank">www.greenride.com.br</a>, this URL will change to gride.club when it goes live"
 		</blockquote>
 	</div>
 </template>

@@ -197,7 +197,6 @@ button {
 
 Body {
 	.bloco();
-	.position(absolute,0,0,0,0);
 	header {
 		padding: 0 2.5vw;
 		@media screen and (min-width: 1440px) {
@@ -215,14 +214,12 @@ Body {
 	}
 	
 	section {
-		overflow:auto;
-		.bloco(auto,100%,50px);
-		.position(absolute,0,0,0,0);
-		
+		.clearfix;
+		.bloco(auto,100%,50px 10px);
 		article {
+			position: relative;
 			z-index:4;
-			.position(absolute, 20vh);
-			.bloco(80vh);
+			.bloco(auto, 100%, 0, 0 auto 5vh);
 			div.work {
 				overflow:hidden;
 				background:@branco;

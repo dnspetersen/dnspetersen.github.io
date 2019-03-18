@@ -43,3 +43,26 @@
 		</figure>
 	</div>
 </template>
+<script>
+export default {
+	data() {
+		return {
+
+		}
+	},
+	methods: {
+		handleScroll() {
+			let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight;
+			if (bottomOfWindow) {
+				document.getElementById('work-menu').classList.add('open');
+			}
+		}
+	},
+	created () {
+		window.addEventListener('scroll', this.handleScroll);
+	},
+	destroyed () {
+		window.removeEventListener('scroll', this.handleScroll);
+	}
+}
+</script>

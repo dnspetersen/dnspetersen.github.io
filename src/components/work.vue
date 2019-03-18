@@ -14,37 +14,37 @@
 					</h1>
 					<p>Selected Works</p>
 				</li>
-				<li @click="setComp = 'appEsupri', avoidOpen()">
+				<li @click="setComp = 'appEsupri', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_1.jpg">
 					<ins>01</ins>
 					<h3><span>&bull;</span> e-Supri</h3>
 				</li>
-				<li @click="setComp = 'appSce', avoidOpen()">
+				<li @click="setComp = 'appSce', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_2.jpg">
 					<ins>02</ins>
 					<h3><span>&bull;</span> SCE</h3>
 				</li>
-				<li @click="setComp = 'appWinemania', avoidOpen()">
+				<li @click="setComp = 'appWinemania', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_3.jpg">
 					<ins>03</ins>
 					<h3><span>&bull;</span> WineMania</h3>
 				</li>
-				<li @click="setComp = 'appOma', avoidOpen()">
+				<li @click="setComp = 'appOma', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_4.jpg">
 					<ins>04</ins>
 					<h3><span>&bull;</span> Oma Galeria</h3>
 				</li>
-				<li @click="setComp = 'appTgp', avoidOpen()">
+				<li @click="setComp = 'appTgp', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_5.jpg">
 					<ins>05</ins>
 					<h3><span>&bull;</span> TGP Advogados</h3>
 				</li>
-				<li @click="setComp = 'appGreen', avoidOpen()">
+				<li @click="setComp = 'appGreen', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_6.jpg">
 					<ins>06</ins>
 					<h3><span>&bull;</span> Green Ride Club</h3>
 				</li>
-				<li @click="setComp = 'appTT', avoidOpen()">
+				<li @click="setComp = 'appTT', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_7.jpg">
 					<ins>07</ins>
 					<h3><span>&bull;</span> Técnico Torcedor</h3>
@@ -69,9 +69,8 @@
 		data() {
 			return {
 				isOpen: true,
-				setComp: 'appWinemania',
+				setComp: '',
 			}
-			
 		},
 		components: {
 			"appWinemania": winemania,
@@ -83,20 +82,25 @@
 			"appGreen": green
 		}, 
 		methods: {
-			avoidOpen() {
-				document.getElementById('work-menu').classList.remove('open');
+			scrollToTop() {
+				window.scrollTo(0,0);
 			},
-			scroll() {
-				window.onscroll = () => {
-					let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight;
-					if (bottomOfWindow) {
-						document.getElementById('work-menu').classList.add('open');
-					}
-				};
+			avoidOpen() {
+				this.isOpen = !this.isOpen;
+			},
+			handleScroll() {
+				let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight;
+				if (bottomOfWindow) {
+					document.getElementById('work-menu').classList.add('open');
+					this.isOpen = true;
+				}
 			}
 		},
-		mounted() {
-			this.scroll();
+		created () {
+			window.addEventListener('scroll', this.handleScroll);
+		},
+		destroyed () {
+			window.removeEventListener('scroll', this.handleScroll);
 		}
 	}
 </script>
