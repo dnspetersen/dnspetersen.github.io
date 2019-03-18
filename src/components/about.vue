@@ -4,11 +4,14 @@
 			<figure>
 				<img src="../assets/profile.jpg" alt="Denis photo">
 				<figcaption>
-					<h2>Designer UX and Front-end</h2>
-					<p>Hi, I'm a digital designer based on São Caetano do Sul, Brazil, working mostly with web development of apps, platforms and sites</p>
-					<p>A part time father of two kids and dedicated with passion for new tech features and design concepts, creating for many companies such as Mundo Verde, Braskem, Santander, Biosev...</p>
-					<p>8 years as a UX designer and Front-end after work with flash animations, illustration, 3D modeling and package development</p>
-					<p>I studied industrial design in UNESP and formed in technical construction by Liceu de Artes</p>
+					<h2>Digital, UX Designer and Front-End Developer</h2>
+					<p>I've been working more than 9 years with digital design and understanding all the evolution in the market improving my skills. In order to achieve more goals, I work focusing in Design, digital marketing and programming.</p>
+					<p>I've started my career with architect design in Autocad and 3D softwares, that I still keep as hobby. Als worked with packaging design, e-learning, flash animations that lead me to the digital design market. </p>
+					<p>As I grew in my career I realized that I could be closer to the people's routine working with web designs, in apps, platforms and pages. Even if I was just doing an illustration for it, I could be part of someone's everyday routine.</p>
+					<p>In my firsts attempts in this field I realized the need of  understanding coding and SEO and gave me the same enthusiasm as design, using creativity and focusing on the results to achieve goals. You can bring amazing results using creativity and simple decisions for some problems.
+I am a father of two boys and a girl and my goal is to give them an example. Giving this legacy moves me and strives me to go further also in my professional career, after all every kid wants to know what their Dad does and how he contributes with the world.</p>
+					<p>I work hard to not get into a routine and the technology with design makes everything more interesting and pushes me to learn more.</p>
+					<p>Now I am interested in learning more about Javascript frameworks with the possibility of increasing the user experience and all the improvement that this trend can bring.</p>
 				</figcaption>
 			</figure>
 			<ol>
@@ -55,8 +58,8 @@
 	export default {
 		data() {
 			return {
-				skills: ['Adobe Pack', 'HTML5', 'CSS3', 'VUE.js','Wordpress', 'Woocommerce', 'SEO', 'English'],
-				width: ['80','90','90','60', '70', '65','60', '70'],
+				skills: ['Adobe Pack', 'HTML5', 'CSS3', 'VUE.js','Wordpress', 'Woocommerce', 'SEO', 'English', 'Invision'],
+				width: ['80','90','90','75', '80', '70','60', '80', '60'],
 				links: {
 					email: "mailto:dnspetersen@gmail.com",
 					whatsapp: "https://wa.me/15551234567https://wa.me/5511976100928",

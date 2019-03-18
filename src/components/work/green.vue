@@ -1,6 +1,6 @@
 <template>
 	<div class="work" id="design-3">
-		<h2><span>03</span>Vicer</h2>
+		<h2><span>06</span>Green Ride Club</h2>
 		<div class="subtitle">
 			<h3><span>Year</span>2019</h3>
 			<h3><span>Products</span>Brand and Store</h3>
