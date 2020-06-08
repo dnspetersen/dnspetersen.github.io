@@ -681,7 +681,7 @@ Body section article#about .profile footer ul li {
   }
   Body section article#work div.work figure img,
   Body section article#identity div.work figure img {
-    max-width: 100% !important;
+    max-width: 100%;
   }
   Body section article#work div.work figure.half img,
   Body section article#identity div.work figure.half img,
