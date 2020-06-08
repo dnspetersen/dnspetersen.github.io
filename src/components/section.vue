@@ -1,7 +1,7 @@
 <template>
   <section>
 	  <ul class="menu">
-		  <li v-for="menu in menus">
+		  <li v-for="menu in menus" key="i">
 			  <router-link :to="'/'+menu.toLowerCase()" @click.native="bindOpen()" active-class="active">{{ menu }}</router-link>
 			</li> 
 		</ul>
