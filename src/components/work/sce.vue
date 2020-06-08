@@ -1,6 +1,6 @@
 <template>
 	<div class="work" id="work-2">
-		<h2 class="title"><span>02</span>SCE  - Delivery Control System</h2>
+		<h2 class="title"><span>03</span>SCE  - Delivery Control System</h2>
 		<div class="subtitle">
 			<h3><span>Year</span>2017</h3>
 			<h3><span>Product</span>App</h3>

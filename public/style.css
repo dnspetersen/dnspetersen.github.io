@@ -141,7 +141,7 @@ button {
 }
 .panels ul {
   overflow-y: scroll;
-  background: #ffffff;
+  background: #fff;
   height: 95%;
   width: 97%;
   margin: 0 auto;
@@ -332,12 +332,12 @@ Body section article {
 }
 Body section article div.work {
   overflow: hidden;
-  background: #ffffff;
+  background: #fff;
   transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   height: auto;
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 10px 128px;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.2), 0 0px 0 rgba(0, 0, 0, 0.15);
 }
 Body section article div.work:last-child {
@@ -417,7 +417,7 @@ Body section article div.work figure > span {
 }
 Body section article div.work figure > span img {
   max-width: 100%;
-  background: #ffffff;
+  background: #fff;
   height: auto;
   width: auto;
   margin: 0;
@@ -557,7 +557,7 @@ Body section article#about .profile {
   width: 100%;
   margin: 0 auto;
   padding: 25px;
-  background: #ffffff;
+  background: #fff;
 }
 @media all and (min-width: 912px) {
   Body section article#about .profile {
@@ -681,10 +681,7 @@ Body section article#about .profile footer ul li {
   }
   Body section article#work div.work figure img,
   Body section article#identity div.work figure img {
-    -webkit-transform: translateX(-25%);
-    -ms-transform: translateX(-25%);
-    transform: translateX(-25%);
-    max-width: 720px;
+    max-width: 100%;
   }
   Body section article#work div.work figure.half img,
   Body section article#identity div.work figure.half img,

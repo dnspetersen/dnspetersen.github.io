@@ -1,6 +1,6 @@
 <template>
 <div class="work" id="work-5">
-	<h2><span>04</span>Omagaleria</h2>
+	<h2><span>05</span>Omagaleria</h2>
 	<div class="subtitle">
 		<h3><span>Year</span>2014</h3>
 		<h3><span>Product</span>Site and Store</h3>

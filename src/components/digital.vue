@@ -17,6 +17,7 @@
 	import winemania from './digital/winemania.vue'
 	import hapjet from './digital/hapjet.vue'
 	import esupri from './digital/esupri.vue'
+	import scoo from './digital/scoo.vue'
 	import torcedor from './digital/torcedor.vue'
 	import oma from './digital/oma.vue'
 	

@@ -1,6 +1,6 @@
 <template>
 	<div class="work" id="work-7">
-		<h2><span>07</span>Técnico Torcedor (Coach'n Fan)</h2>
+		<h2><span>08</span>Técnico Torcedor (Coach'n Fan)</h2>
 		<div class="subtitle">
 			<h3><span>Year</span>2015</h3>
 			<h3><span>Product</span>App</h3>

@@ -14,39 +14,44 @@
 					</h1>
 					<p>Selected Works</p>
 				</li>
+				<li @click="setComp = 'appScoo', scrollToTop(), avoidOpen()">
+					<img src="../assets/thumb_0.jpg">
+					<ins>01</ins>
+					<h3><span>&bull;</span> Scoo</h3>
+				</li>
 				<li @click="setComp = 'appEsupri', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_1.jpg">
-					<ins>01</ins>
+					<ins>02</ins>
 					<h3><span>&bull;</span> e-Supri</h3>
 				</li>
 				<li @click="setComp = 'appSce', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_2.jpg">
-					<ins>02</ins>
+					<ins>03</ins>
 					<h3><span>&bull;</span> SCE</h3>
 				</li>
 				<li @click="setComp = 'appWinemania', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_3.jpg">
-					<ins>03</ins>
+					<ins>04</ins>
 					<h3><span>&bull;</span> WineMania</h3>
 				</li>
 				<li @click="setComp = 'appOma', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_4.jpg">
-					<ins>04</ins>
+					<ins>05</ins>
 					<h3><span>&bull;</span> Oma Galeria</h3>
 				</li>
 				<li @click="setComp = 'appTgp', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_5.jpg">
-					<ins>05</ins>
+					<ins>06</ins>
 					<h3><span>&bull;</span> TGP Advogados</h3>
 				</li>
 				<li @click="setComp = 'appGreen', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_6.jpg">
-					<ins>06</ins>
+					<ins>07</ins>
 					<h3><span>&bull;</span> Green Ride Club</h3>
 				</li>
 				<li @click="setComp = 'appTT', scrollToTop(), avoidOpen()">
 					<img src="../assets/thumb_7.jpg">
-					<ins>07</ins>
+					<ins>08</ins>
 					<h3><span>&bull;</span> Técnico Torcedor</h3>
 				</li>
 			</ul>
@@ -57,6 +62,7 @@
 	</article>
 </template>
 <script>
+	import scoo from './work/scoo.vue'
 	import esupri from './work/esupri.vue'
 	import sce from './work/sce.vue'
 	import winemania from './work/winemania.vue'
@@ -79,7 +85,8 @@
 			"appTT": torcedor,
 			"appOma": oma,
 			"appTgp": tgp,
-			"appGreen": green
+			"appGreen": green,
+			"appScoo": scoo,
 		}, 
 		methods: {
 			scrollToTop() {

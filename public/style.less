@@ -224,7 +224,7 @@ Body {
 				overflow:hidden;
 				background:@branco;
 				.transition(all,0.6s);
-				.bloco(auto,100%,10px,0 auto);
+				.bloco(auto,100%,10px 10px 128px,0 auto);
 				.sombra(0,0,100px,rgba(0,0,0,0.2));
 				&:last-child {
 					margin-bottom: 90px;
@@ -455,8 +455,7 @@ Body {
 					div.work {
 						figure {
 							img {
-								.transform(translateX(-25%));
-								max-width: 720px;
+								max-width: 100%;
 							}
 							&.half {
 								img, img+img {

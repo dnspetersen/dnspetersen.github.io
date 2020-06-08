@@ -1,6 +1,6 @@
 <template>
 	<div class="work" id="design-1">
-		<h2><span>05</span>TGP Advogados</h2>
+		<h2><span>06</span>TGP Advogados</h2>
 		<div class="subtitle">
 			<h3><span>Year</span>2018</h3>
 			<h3><span>Products</span>Web and Print</h3>

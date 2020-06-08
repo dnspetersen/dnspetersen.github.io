@@ -1,6 +1,6 @@
 <template>
 	<div class="work" id="work-1">
-		<h2 class="title"><span>03</span>WineMania</h2>
+		<h2 class="title"><span>04</span>WineMania</h2>
 		<div class="subtitle">
 			<h3><span>Year</span>2018</h3>
 			<h3><span>Product</span>e-Commerce</h3>

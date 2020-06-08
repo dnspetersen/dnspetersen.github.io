@@ -1,6 +1,6 @@
 <template>
 <div class="work" id="work-3">
-	<h2><span>01</span>e-Supri</h2>
+	<h2><span>02</span>e-Supri</h2>
 	<div class="subtitle">
 		<h3><span>Year</span>2018</h3>
 		<h3><span>Product</span>Integrated Platform</h3>
