@@ -5,7 +5,7 @@
 				<img src="../assets/profile.jpg" alt="Denis photo">
 				<figcaption>
 					<h2>Digital, UX Designer and Front-End Developer</h2>
-					<p>I've been working more than 9 years with digital design and understanding all the evolution in the market improving my skills. In order to achieve more goals, I work focusing in Design, digital marketing and programming.</p>
+					<p>I've been working more than 12 years with digital design and understanding all the evolution in the market improving my skills. In order to achieve more goals, I work focusing in Design, digital marketing and programming.</p>
 					<p>I've started my career with architect design in Autocad and 3D softwares, that I still keep as hobby. Als worked with packaging design, e-learning, flash animations that lead me to the digital design market. </p>
 					<p>As I grew in my career I realized that I could be closer to the people's routine working with web designs, in apps, platforms and pages. Even if I was just doing an illustration for it, I could be part of someone's everyday routine.</p>
 					<p>In my firsts attempts in this field I realized the need of  understanding coding and SEO and gave me the same enthusiasm as design, using creativity and focusing on the results to achieve goals. You can bring amazing results using creativity and simple decisions for some problems.
@@ -58,7 +58,7 @@ I am a father of two boys and a girl and my goal is to give them an example. Giv
 	export default {
 		data() {
 			return {
-				skills: ['Adobe Pack', 'HTML5', 'CSS3', 'VUE.js','Wordpress', 'Woocommerce', 'SEO', 'English', 'Invision'],
+				skills: ['Adobe Pack', 'HTML5', 'CSS3', 'VUE.js','Wordpress', 'Woocommerce', 'SEO', 'English', 'Figma'],
 				width: ['80','90','90','75', '80', '70','60', '80', '60'],
 				links: {
 					email: "mailto:dnspetersen@gmail.com",
