@@ -93,6 +93,8 @@
 				if (bottomOfWindow) {
 					document.getElementById('work-menu').classList.add('open');
 					this.isOpen = true;
+				} else {
+					document.getElementById('work-menu').classList.remove('open');
 				}
 			}
 		},
