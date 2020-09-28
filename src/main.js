@@ -1,19 +1,16 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router';
+import style from './style.less'
+import router from './router'
+import store from './store'
 import App from './App.vue'
-import { routes } from './routes';
+import gsap from "gsap/all"
 
-Vue.use(VueRouter);
-
-Vue.config.productionTip = false;
-
-const router = new VueRouter({
-    routes,
-    mode: 'history'
-});
+Vue.config.productionTip = false
 
 new Vue({
-    el: "#app",
-    router,
-    render: h => h(App),
-})
+  gsap,
+  style,
+  router,
+  store,
+  render: h => h(App),
+}).$mount('#app')
