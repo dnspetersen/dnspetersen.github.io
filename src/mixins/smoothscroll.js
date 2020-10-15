@@ -54,6 +54,6 @@ export default {
     }
   },
   mounted() {
-    this.SmoothScroll(document,120,12)
+    this.SmoothScroll(document,80,12)
   },
 }
