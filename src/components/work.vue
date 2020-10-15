@@ -42,7 +42,7 @@ section {
     & > h3 {
         position: relative;
         z-index: 9;
-        top: 60px;
+        top: 45px;
         text-align: center;
         width: 100%;
         height: 0;
