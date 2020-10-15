@@ -11,13 +11,22 @@ import Torcedor from './components/torcedor.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'hash',
+  mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
         path: '/',
         name: 'home',
-        component: Home
+        component: Home,
+        beforeEnter: (to, from, next) => {
+          if (sessionStorage.getItem('redirect') !== null) {
+            const redirect = sessionStorage.redirect
+            delete sessionStorage.redirect
+            next(redirect)
+          } else {
+            next()
+          }
+        }
     },
     {
         path: '/about',
