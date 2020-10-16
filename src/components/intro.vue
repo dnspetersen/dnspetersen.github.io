@@ -11,9 +11,7 @@
             <span ref="linkme"><button type="button" @click="moveUp('about')" class="action">About me</button></span>
         </div>
         <div class="stack">
-            <figure ref="image">
-                <img src="../assets/imagem_estanque.png" alt="capa" @load="onImgLoad">
-            </figure>
+            <figure ref="image"></figure>
             <label class="orientation" ref="button">
                 <button type="button" @click="moveUp('work')" class="round-btn">{{instruction}}</button>
             </label>
