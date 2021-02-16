@@ -1,28 +1,18 @@
 <template>
-  <div id="app">
-    <site-header></site-header>
-    <router-view></router-view>
-    <site-footer></site-footer>
-  </div>
+  <div>
+		<app-header></app-header>
+		<app-section></app-section>
+		</div>
 </template>
 
 <script>
-import SiteHeader from './components/header.vue'
-import SiteFooter from './components/footer.vue'
-import smoothscroll from '@/mixins/smoothscroll'
+import header from './components/header.vue'
+import section from './components/section.vue'
 
 export default {
-  name: 'App',
-  components: {
-    SiteHeader,
-    SiteFooter
-  },
-  mixins: [
-    smoothscroll
-  ]
+	components: {
+		'appHeader': header,
+		'appSection': section
+	}
 }
 </script>
-
-<style lang="less">
-
-</style>
