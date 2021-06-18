@@ -59,7 +59,7 @@ I am a father of two boys and a girl and my goal is to give them an example. Giv
 		data() {
 			return {
 				skills: ['Adobe Pack', 'HTML5', 'CSS3', 'VUE.js','Wordpress', 'Woocommerce', 'SEO', 'English', 'Figma'],
-				width: ['80','90','90','75', '80', '70','60', '80', '60'],
+				width: ['80','90','90','75', '80', '70','60', '80', '90'],
 				links: {
 					email: "mailto:dnspetersen@gmail.com",
 					whatsapp: "https://wa.me/15551234567https://wa.me/5511976100928",
